@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porcentajes", "Tareas\Porce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intereses", "Intereses\Intereses.csproj", "{838E217F-7FD7-42F8-926B-F8AD23A9153B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreasFiguras", "AreasFiguras\AreasFiguras.csproj", "{13E6EA1F-A6F3-486A-89F3-5CE3E4884BB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{838E217F-7FD7-42F8-926B-F8AD23A9153B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{838E217F-7FD7-42F8-926B-F8AD23A9153B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{838E217F-7FD7-42F8-926B-F8AD23A9153B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E6EA1F-A6F3-486A-89F3-5CE3E4884BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E6EA1F-A6F3-486A-89F3-5CE3E4884BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E6EA1F-A6F3-486A-89F3-5CE3E4884BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E6EA1F-A6F3-486A-89F3-5CE3E4884BB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
