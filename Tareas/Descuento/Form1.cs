@@ -12,9 +12,16 @@ namespace Descuento
 {
     public partial class Form1 : Form
     {
+        Descuentos objDesc = new Descuentos();
         public Form1()
         {
             InitializeComponent();
         }
+
+        public void AsignarValores(string color)
+        {
+            //objDesc.MontoPagarM;
+        }
+
     }
 }

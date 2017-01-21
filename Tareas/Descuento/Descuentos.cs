@@ -13,7 +13,7 @@ namespace Descuento
         double descuento;
         double totalPagar;
 
-        
+
         public double MontoPagar
         {
             set { montoPagar = value; }
@@ -36,7 +36,36 @@ namespace Descuento
 
         public void CalcularDescuento()
         {
-            if
+            if (color == "Rojo")
+            {
+                descuento = montoPagar * .10;
+            }
+            else if (color == "Verde")
+            {
+                descuento = montoPagar * .30;
+            }
+
+            else if (color == "Morado")
+            {
+                descuento = montoPagar * .40;
+            }
+            else if (color == "Azul")
+            {
+                descuento = montoPagar * .50;
+            }
+            else if (color == "Gris")
+            {
+                descuento = montoPagar * .80;
+            }
+            else
+            {
+                descuento = montoPagar * 1;
+            }
+        }
+
+        public void CalcularTotalPago()
+        {
+            totalPagar = montoPagar - descuento;
         }
 
     }
