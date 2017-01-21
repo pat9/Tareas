@@ -27,7 +27,15 @@ namespace AreasFiguras
             }
             else
             {
-                lbl_Lado1.Text = "Lado";
+                if( rbt_Cuadrado.Checked)
+                {
+                    lbl_Lado1.Text = "Lado";
+                }
+                else
+                {
+                    lbl_Lado1.Text = "Radio";
+                }
+                
             }
 
             lbl_Lado2.Visible = estado;
@@ -43,16 +51,14 @@ namespace AreasFiguras
         {
             if(rbt_Cuadrado.Checked == true)
             {
-                double lado = Convert.ToDouble(txt_Lado1.Text);
-                objAreas.ObtenerDatos(lado);
+                objAreas.Vlado1 = Convert.ToDouble(txt_Lado1.Text);
 
                 MostrarArea(objAreas.CalcularAreaCuadrado());
             }
             else if (rbt_Triangulo.Checked == true)
             {
-                double lado = Convert.ToDouble(txt_Lado1.Text);
-                double lado2 = Convert.ToDouble(txt_Lado2.Text);
-                objAreas.ObtnerDatos(lado, lado2);
+                objAreas.Vlado1 = Convert.ToDouble(txt_Lado1.Text);
+                objAreas.Lado2  = Convert.ToDouble(txt_Lado2.Text);
 
                 MostrarArea(objAreas.CalcularAreaTriangulo());
             }

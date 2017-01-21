@@ -12,15 +12,26 @@ namespace AreasFiguras
         double lado2;
         double resultado;
 
+
+        public double Lado1
+        {
+            set
+            {
+                lado1 = value;
+            }
+        }
+
+        public double Lado2
+        {
+            set
+            {
+                lado2 = value;
+            }
+        }
+
         public void ObtenerDatos(double lad1)
         {
             lado1 = lad1;
-        }
-
-        public void ObtnerDatos(double lad1, double lad2)
-        {
-            lado1 = lad1;
-            lado2 = lad2;
         }
 
         public double CalcularAreaCuadrado()
