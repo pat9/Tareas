@@ -12,6 +12,7 @@ namespace Descuento
         string color;
         double descuento;
         double totalPagar;
+        int pordescuento;
 
 
         public double MontoPagar
@@ -34,33 +35,22 @@ namespace Descuento
             get { return totalPagar; }
         }
 
-        public void CalcularDescuento()
+        public int Pordescuento
         {
-            if (color == "Rojo")
+            get
             {
-                descuento = montoPagar * .10;
-            }
-            else if (color == "Verde")
-            {
-                descuento = montoPagar * .30;
+                return pordescuento;
             }
 
-            else if (color == "Morado")
+            set
             {
-                descuento = montoPagar * .40;
+                pordescuento = value;
             }
-            else if (color == "Azul")
-            {
-                descuento = montoPagar * .50;
-            }
-            else if (color == "Gris")
-            {
-                descuento = montoPagar * .80;
-            }
-            else
-            {
-                descuento = montoPagar * 1;
-            }
+        }
+
+        public void CalcularDescuento()
+        {
+            descuento = (montoPagar * pordescuento)/100;
         }
 
         public void CalcularTotalPago()

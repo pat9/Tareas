@@ -51,13 +51,13 @@ namespace AreasFiguras
         {
             if(rbt_Cuadrado.Checked == true)
             {
-                objAreas.Vlado1 = Convert.ToDouble(txt_Lado1.Text);
+                objAreas.Lado1 = Convert.ToDouble(txt_Lado1.Text);
 
                 MostrarArea(objAreas.CalcularAreaCuadrado());
             }
             else if (rbt_Triangulo.Checked == true)
             {
-                objAreas.Vlado1 = Convert.ToDouble(txt_Lado1.Text);
+                objAreas.Lado1 = Convert.ToDouble(txt_Lado1.Text);
                 objAreas.Lado2  = Convert.ToDouble(txt_Lado2.Text);
 
                 MostrarArea(objAreas.CalcularAreaTriangulo());
@@ -66,7 +66,7 @@ namespace AreasFiguras
             {
                 double lado = Convert.ToDouble(txt_Lado1.Text);
                 double lado2 = Convert.ToDouble(txt_Lado2.Text);
-                objAreas.ObtnerDatos(lado, lado2);
+                //objAreas.ObtnerDatos(lado, lado2);
 
                 MostrarArea(objAreas.CalcularAreaRectangulo());
             }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Descuento
+namespace Promedio
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Descuento
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Descuentos());
+            Application.Run(new frm_Prom());
         }
     }
 }
