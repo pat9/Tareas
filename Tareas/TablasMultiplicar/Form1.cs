@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace TablasMultiplicar
 {
-    public partial class Form1 : Form
+    public partial class frm_Tabla : Form
     {
-        public Form1()
+        Tabla objTabla = new Tabla();
+        public frm_Tabla()
         {
             InitializeComponent();
         }
@@ -22,15 +23,23 @@ namespace TablasMultiplicar
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Calcular_Click(object sender, EventArgs e)
         {
-            int num = Convert.ToInt32(textBox1.Text);
-            for(int x = 1; x<=10; x++)
+            rtb_Tabla.Clear();
+            objTabla.Num = Convert.ToInt32(txt_Tabla.Text);
+            for (int x = 1; x <= 10; x++)
             {
-                int res = num * x;
-                rtx_Tabla.AppendText(num + "*" + x + "= " + res + "\n");
+                objTabla.Num2 = x;
+                objTabla.Multiplicar();
+
+                rtb_Tabla.AppendText(objTabla.Num + " * " + objTabla.Num2 + " = " + objTabla.Res + "\n");
             }
            
+        }
+
+        private void frm_Tabla_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

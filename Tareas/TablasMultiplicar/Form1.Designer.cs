@@ -1,6 +1,6 @@
 ﻿namespace TablasMultiplicar
 {
-    partial class Form1
+    partial class frm_Tabla
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,47 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rtx_Tabla = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rtb_Tabla = new System.Windows.Forms.RichTextBox();
+            this.txt_Tabla = new System.Windows.Forms.TextBox();
+            this.btn_Calcular = new System.Windows.Forms.Button();
+            this.lbl_Numero = new System.Windows.Forms.Label();
+            this.lbl_Tabla = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // rtx_Tabla
+            // rtb_Tabla
             // 
-            this.rtx_Tabla.Location = new System.Drawing.Point(58, 77);
-            this.rtx_Tabla.Name = "rtx_Tabla";
-            this.rtx_Tabla.Size = new System.Drawing.Size(100, 96);
-            this.rtx_Tabla.TabIndex = 0;
-            this.rtx_Tabla.Text = "";
-            this.rtx_Tabla.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.rtb_Tabla.Location = new System.Drawing.Point(12, 77);
+            this.rtb_Tabla.Name = "rtb_Tabla";
+            this.rtb_Tabla.Size = new System.Drawing.Size(197, 154);
+            this.rtb_Tabla.TabIndex = 0;
+            this.rtb_Tabla.Text = "";
+            this.rtb_Tabla.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // textBox1
+            // txt_Tabla
             // 
-            this.textBox1.Location = new System.Drawing.Point(58, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txt_Tabla.Location = new System.Drawing.Point(58, 27);
+            this.txt_Tabla.Name = "txt_Tabla";
+            this.txt_Tabla.Size = new System.Drawing.Size(100, 20);
+            this.txt_Tabla.TabIndex = 1;
             // 
-            // button1
+            // btn_Calcular
             // 
-            this.button1.Location = new System.Drawing.Point(58, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 19);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Calcular.Location = new System.Drawing.Point(58, 237);
+            this.btn_Calcular.Name = "btn_Calcular";
+            this.btn_Calcular.Size = new System.Drawing.Size(102, 24);
+            this.btn_Calcular.TabIndex = 2;
+            this.btn_Calcular.Text = "Calcular";
+            this.btn_Calcular.UseVisualStyleBackColor = true;
+            this.btn_Calcular.Click += new System.EventHandler(this.btn_Calcular_Click);
             // 
-            // Form1
+            // lbl_Numero
+            // 
+            this.lbl_Numero.AutoSize = true;
+            this.lbl_Numero.Location = new System.Drawing.Point(84, 11);
+            this.lbl_Numero.Name = "lbl_Numero";
+            this.lbl_Numero.Size = new System.Drawing.Size(47, 13);
+            this.lbl_Numero.TabIndex = 3;
+            this.lbl_Numero.Text = "Numero:";
+            // 
+            // lbl_Tabla
+            // 
+            this.lbl_Tabla.AutoSize = true;
+            this.lbl_Tabla.Location = new System.Drawing.Point(55, 61);
+            this.lbl_Tabla.Name = "lbl_Tabla";
+            this.lbl_Tabla.Size = new System.Drawing.Size(98, 13);
+            this.lbl_Tabla.TabIndex = 4;
+            this.lbl_Tabla.Text = "Tabla de multiplicar";
+            this.lbl_Tabla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // frm_Tabla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(221, 210);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.rtx_Tabla);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(221, 267);
+            this.Controls.Add(this.lbl_Tabla);
+            this.Controls.Add(this.lbl_Numero);
+            this.Controls.Add(this.btn_Calcular);
+            this.Controls.Add(this.txt_Tabla);
+            this.Controls.Add(this.rtb_Tabla);
+            this.Name = "frm_Tabla";
+            this.Text = "Tabla de multiplicar";
+            this.Load += new System.EventHandler(this.frm_Tabla_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,9 +100,11 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox rtx_Tabla;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox rtb_Tabla;
+        private System.Windows.Forms.TextBox txt_Tabla;
+        private System.Windows.Forms.Button btn_Calcular;
+        private System.Windows.Forms.Label lbl_Numero;
+        private System.Windows.Forms.Label lbl_Tabla;
     }
 }
 
