@@ -87,15 +87,17 @@
             this.btn_HorasDobles.TabIndex = 5;
             this.btn_HorasDobles.Text = "Horas Dobles";
             this.btn_HorasDobles.UseVisualStyleBackColor = true;
+            this.btn_HorasDobles.Click += new System.EventHandler(this.btn_HorasDobles_Click);
             // 
             // btn_Triples
             // 
-            this.btn_Triples.Location = new System.Drawing.Point(144, 117);
+            this.btn_Triples.Location = new System.Drawing.Point(130, 117);
             this.btn_Triples.Name = "btn_Triples";
-            this.btn_Triples.Size = new System.Drawing.Size(75, 23);
+            this.btn_Triples.Size = new System.Drawing.Size(109, 23);
             this.btn_Triples.TabIndex = 6;
             this.btn_Triples.Text = "Horas Triples";
             this.btn_Triples.UseVisualStyleBackColor = true;
+            this.btn_Triples.Click += new System.EventHandler(this.btn_Triples_Click);
             // 
             // frm_Empleado
             // 
