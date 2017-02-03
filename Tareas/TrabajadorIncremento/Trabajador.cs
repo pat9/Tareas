@@ -72,6 +72,10 @@ namespace TrabajadorIncremento
             {
              porcentaje = totalSalrio * .5;
             }
+            else
+            {
+                porcentaje = 0;
+            }
             totalSalrio = totalSalrio + porcentaje;
         }
 
