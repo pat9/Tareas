@@ -8,26 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TrabajadorIncremento
+namespace TrabajadorDescuento
 {
-    public partial class frm_Salario : Form
+    public partial class frm_Descuento : Form
     {
         Trabajador objTrab = new Trabajador();
-        public frm_Salario()
+        public frm_Descuento()
         {
             InitializeComponent();
         }
 
         private void btn_Calcular_Click(object sender, EventArgs e)
         {
-            objTrab.Horas = Convert.ToInt32(txt_Horas.Text);
-            objTrab.PagoPorHora = Convert.ToDouble(txt_Pago.Text);
- 
+            objTrab.Salario = Convert.ToDouble(txt_Sal.Text);
+
             objTrab.CalcularSalario();
 
-            txt_Porcent.Text = objTrab.Porcentaje.ToString();
-            txt_Sal.Text = objTrab.TotalSalrio.ToString();
-
+            txt_Descuento.Text = objTrab.Descuento.ToString();
+            txt_Total.Text = objTrab.TotalSalrio.ToString();
         }
     }
 }
